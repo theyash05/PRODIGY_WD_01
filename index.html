@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script defer src="menu.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-menu" id="nav-menu">
+            <li class="nav-item">Home</li>
+            <li class="nav-item">About</li>
+            <li class="nav-item">Services</li>
+            <li class="nav-item">Contact</li>
+        </ul>
+    </nav>
+    <main>
+        <div class="center-section">
+            <h2 class="input-title">Add section to menu bar</h2>
+            <input type="text" id="section-input" placeholder="Enter section name" />
+            <select id="color-select">
+                <option value="#e74c3c" data-color="#e74c3c">🔴 Red</option>
+                <option value="#27ae60" data-color="#27ae60">🟢 Green</option>
+                <option value="#2980b9" data-color="#2980b9">🔵 Blue</option>
+                <option value="#f1c40f" data-color="#f1c40f">🟡 Yellow</option>
+                <option value="#8e44ad" data-color="#8e44ad">🟣 Purple</option>
+            </select>
+            <button id="add-btn">Add</button>
+        </div>
+        <div class="info-card">
+            <h1 class="project-title">Interactive Navigation Menu Project</h1>
+            <div class="project-description">
+                <p>
+                This project demonstrates a modern, interactive navigation menu for a website, designed to enhance user experience and provide dynamic customization. The navigation bar is fixed at the top of the page, ensuring that users always have access to the main sections of the site, regardless of their scroll position. Users can add new sections to the navigation menu by entering a section name and selecting a custom hover color from a dropdown menu. When the "Add" button is clicked, the new section is saved and immediately appears in the navigation bar after the page reloads. The selected color is used as the hover effect for that specific menu item, making it visually distinct and easy to identify.
+                <br><br>
+                The navigation bar also features a scroll effect: as the user scrolls down the page, the background color and style of the navbar change, providing a clear visual cue that the user is no longer at the top of the page. This effect is achieved using JavaScript, which listens for scroll events and updates the navbar's class accordingly. The menu is fully responsive and remains visible on all pages, making navigation seamless. The project leverages HTML for structure, CSS for styling and layout, and JavaScript for interactivity and state management. All custom menu items are stored in the browser's localStorage, ensuring that user preferences persist across sessions. This project is ideal for learning about DOM manipulation, event handling, and creating user-friendly, interactive web interfaces.
+                </p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
